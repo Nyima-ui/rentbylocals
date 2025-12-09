@@ -1,0 +1,14 @@
+
+
+.productGrid{
+    border: 1px solid white; 
+    max-width: 1154px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+.productGridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 10px;
+}

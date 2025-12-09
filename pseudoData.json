@@ -1,0 +1,554 @@
+[
+  {
+    "id": "1ac73957-1ea4-4659-baa6-75772a8d5ee0",
+    "owner_id": "b3a72cd8-b295-42d2-ad34-06594a05ea56",
+    "created_at": "2025-12-06 03:32:46.451354+00",
+    "title": "Samyang 14mm af 2.8 sony fit. super wide angle lens",
+    "description": "Samyang 14mm AF 2.8 sony fit. Comes with lens hood and bag. Perfect for indoor shoots and capturing the whole scene. Super wide angle lens",
+    "category": "Electronics",
+    "price_daily": 15,
+    "price_weekly": 80,
+    "price_monthly": 200,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Markham",
+    "location_neighborhood": [
+      "Richmond Hill",
+      "Scarborough"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "34bb8a62-3c41-477d-97a0-31c849343c90",
+    "owner_id": "a27bc481-02a2-4ef2-b875-d9fd8bb0ae63",
+    "created_at": "2025-12-06 04:12:10.421354+00",
+    "title": "Canon EOS R6 Mirrorless Camera + RF 24-70mm Lens",
+    "description": "Canon R6 full-frame mirrorless camera perfect for weddings, travel, and indoor shoots. Comes with RF 24-70mm f2.8 lens, extra battery, and charger.",
+    "category": "Videography",
+    "price_daily": 40,
+    "price_weekly": 220,
+    "price_monthly": 600,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "North York",
+      "Etobicoke",
+      "Scarborough"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "8cc414e3-c2c0-4ccf-8b61-947a7d8f6df8",
+    "owner_id": "b18fa129-a34c-40b5-8570-73d0adc1a81a",
+    "created_at": "2025-12-06 04:14:22.904321+00",
+    "title": "PlayStation 5 Disc Edition + 2 Controllers",
+    "description": "PlayStation 5 console available for rent with two DualSense controllers. Great for gaming nights or weekend events.",
+    "category": "Electronics",
+    "price_daily": 20,
+    "price_weekly": 100,
+    "price_monthly": 250,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Mississauga",
+    "location_neighborhood": [
+      "Brampton",
+      "Oakville"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "bf734431-f853-4f2d-b92a-8ab3142f2d16",
+    "owner_id": "bb3dfb33-1206-4423-a61f-300b81f1a96b",
+    "created_at": "2025-12-06 04:16:40.891232+00",
+    "title": "DJI Mavic Air 2 Drone with 4K Camera",
+    "description": "DJI Mavic Air 2 drone with 4K 60fps camera and three batteries. Perfect for aerial shoots, real estate videos, and outdoor adventures.",
+    "category": "Videography",
+    "price_daily": 35,
+    "price_weekly": 180,
+    "price_monthly": 480,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Brampton",
+    "location_neighborhood": [
+      "Mississauga",
+      "Caledon"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "eced33c7-a4b0-4e3f-b130-5d3286725a40",
+    "owner_id": "28fba584-ca4e-450e-9a96-41131e392c83",
+    "created_at": "2025-12-06 04:18:12.221654+00",
+    "title": "Nikon Z50 Compact Mirrorless Camera Kit",
+    "description": "Beginner-friendly Nikon Z50 mirrorless camera with 16-50mm kit lens. Lightweight and excellent for content creators.",
+    "category": "Photography",
+    "price_daily": 18,
+    "price_weekly": 90,
+    "price_monthly": 240,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Scarborough",
+    "location_neighborhood": [
+      "Markham",
+      "Toronto"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "c5cc04c0-0a41-48f1-a2ae-336cbe3faaa1",
+    "owner_id": "d87b4ed8-e743-41dd-a0ea-2c389498a9db",
+    "created_at": "2025-12-06 04:21:50.144221+00",
+    "title": "Tesla Model 3 – Full Electric Car (Daily Rental)",
+    "description": "Tesla Model 3 Long Range. Fully electric. Includes Autopilot, heated seats, and free charging for renters at select stations.",
+    "category": "Vehicle",
+    "price_daily": 150,
+    "price_weekly": 850,
+    "price_monthly": 2400,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "North York",
+      "Downtown",
+      "Etobicoke"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "d71a555e-1587-49d6-a6e1-4fedf6845e29",
+    "owner_id": "5a0ec41e-d845-4ff9-9aa8-413f93dfbef7",
+    "created_at": "2025-12-06 04:25:32.214199+00",
+    "title": "Xbox Series X + Game Pass (optional)",
+    "description": "Xbox Series X with one controller. Can add Xbox Game Pass if required.",
+    "category": "Electronics",
+    "price_daily": 18,
+    "price_weekly": 95,
+    "price_monthly": 230,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Oakville",
+    "location_neighborhood": [
+      "Mississauga",
+      "Milton"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "b172ac3b-4a5a-44bc-9eea-ccf0c3df172c",
+    "owner_id": "642ec32a-d3e3-4c91-829b-9fcd75af55d5",
+    "created_at": "2025-12-06 04:27:56.832140+00",
+    "title": "Camping Tent for 4 People",
+    "description": "Waterproof 4-person tent suitable for Ontario camping trips. Lightweight and easy to set up.",
+    "category": "Outdoors",
+    "price_daily": 10,
+    "price_weekly": 45,
+    "price_monthly": 120,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Burlington",
+    "location_neighborhood": [
+      "Oakville",
+      "Hamilton"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "42fb7ee8-4627-41ef-a519-9bc7a8db9dfd",
+    "owner_id": "2de45c26-d60f-40b9-a799-772affd174c7",
+    "created_at": "2025-12-06 04:29:11.722004+00",
+    "title": "Canon EF 70-200mm f2.8 Telephoto Lens",
+    "description": "Professional telephoto lens perfect for portraits, wildlife, and sports photography.",
+    "category": "Photography",
+    "price_daily": 25,
+    "price_weekly": 120,
+    "price_monthly": 320,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Markham",
+    "location_neighborhood": [
+      "Richmond Hill",
+      "Scarborough"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "e73cf1c8-e2fa-48a5-83b0-65b698e9e22f",
+    "owner_id": "d2a30f6e-2580-4b81-a462-f9bb079cfae3",
+    "created_at": "2025-12-06 04:31:44.551909+00",
+    "title": "Electric Guitar Fender Stratocaster",
+    "description": "Fender Stratocaster electric guitar with strap and soft case. Suitable for gigs or practice sessions.",
+    "category": "Music",
+    "price_daily": 12,
+    "price_weekly": 65,
+    "price_monthly": 180,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "Downtown",
+      "East York"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "0ddc7bb3-6bb1-4f3e-842a-bb78d7a58c22",
+    "owner_id": "bdf2ae86-bf00-4dab-a494-7a2b21b8b550",
+    "created_at": "2025-12-06 04:33:00.114990+00",
+    "title": "Professional Lighting Kit – Softboxes",
+    "description": "Two softboxes with daylight bulbs. Perfect for video shoots, interviews, or product photography.",
+    "category": "Videography",
+    "price_daily": 15,
+    "price_weekly": 70,
+    "price_monthly": 180,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Richmond Hill",
+    "location_neighborhood": [
+      "Markham",
+      "Vaughan"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "7b0c9166-b3ed-4061-9f8e-1ad7bcbe1851",
+    "owner_id": "e18c4652-2cd8-4a9f-9f54-74dd21cb5367",
+    "created_at": "2025-12-06 04:35:40.215230+00",
+    "title": "DJI Ronin-S Gimbal for DSLR",
+    "description": "3-axis gimbal stabilizer for cinematic video. Works with most Canon, Sony, and Nikon DSLRs.",
+    "category": "Videography",
+    "price_daily": 20,
+    "price_weekly": 100,
+    "price_monthly": 280,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "Etobicoke",
+      "North York"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "c3447d0c-9f18-441e-829e-473a8e4340c4",
+    "owner_id": "356abf2e-2504-496b-9d8a-b274edb9e894",
+    "created_at": "2025-12-06 04:37:51.332210+00",
+    "title": "iPad Pro 12.9 Inch with Apple Pencil",
+    "description": "iPad Pro with M1 chip, perfect for designers, students, and digital artists. Includes Apple Pencil.",
+    "category": "Electronics",
+    "price_daily": 25,
+    "price_weekly": 120,
+    "price_monthly": 310,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Mississauga",
+    "location_neighborhood": [
+      "Brampton",
+      "Etobicoke"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "4b9e28f2-8c10-4e3a-b0f5-36d1b7c84a0d",
+    "owner_id": "4d1a58c9-7e3f-4b0d-9a6c-2f8d4e7c3b21",
+    "created_at": "2025-12-07 09:10:05.112000+00",
+    "title": "Portable Projector & 100-inch Screen",
+    "description": "High-definition portable projector with a 100-inch collapsible screen. Ideal for movie nights, presentations, or backyard events.",
+    "category": "Electronics",
+    "price_daily": 30,
+    "price_weekly": 150,
+    "price_monthly": 400,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Vaughan",
+    "location_neighborhood": [
+      "Woodbridge",
+      "Richmond Hill"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "d2a0e5b7-7f91-4c4d-9e6b-0a3f8c5b1d4a",
+    "owner_id": "b3e21c84-8d9e-4f7a-b1c2-5e6f0d7c4a1b",
+    "created_at": "2025-12-07 10:25:30.456000+00",
+    "title": "Road Bike - Specialized Allez (56cm)",
+    "description": "Lightweight aluminum road bike, size 56cm. Perfect for summer rides along the waterfront or training. Helmet included.",
+    "category": "Outdoors",
+    "price_daily": 20,
+    "price_weekly": 90,
+    "price_monthly": 280,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "Downtown",
+      "Leslieville"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "1e5f4d8a-6b2c-4f1e-9a0b-2d7c5a9b8e3f",
+    "owner_id": "c1a9d0b5-7c2e-4e3f-8d9a-4f5b6e7d0a2c",
+    "created_at": "2025-12-07 11:40:15.901000+00",
+    "title": "GoPro HERO12 Black Action Camera Kit",
+    "description": "Latest GoPro HERO12 Black with waterproof case, extra batteries, and various mounts. Ideal for sports and adventure videography.",
+    "category": "Videography",
+    "price_daily": 22,
+    "price_weekly": 110,
+    "price_monthly": 300,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Etobicoke",
+    "location_neighborhood": [
+      "Mississauga",
+      "North York"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "7c3a9d0b-4e1f-4b2c-8d5a-0f6b1e8d4c7f",
+    "owner_id": "e4f8d9a1-5c3b-4a7d-8e2f-1b0c6d9a4f3b",
+    "created_at": "2025-12-07 13:02:44.223000+00",
+    "title": "Large PA System and Mixer (Speakers & Mics)",
+    "description": "Professional sound system with two large speakers, a 12-channel mixer, and two wired microphones. Suitable for parties or small gigs.",
+    "category": "Music",
+    "price_daily": 50,
+    "price_weekly": 250,
+    "price_monthly": 650,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Scarborough",
+    "location_neighborhood": [
+      "Markham",
+      "Pickering"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "a5e8c1b3-6f4d-4a9c-9d0b-2f3c7d6a5e1b",
+    "owner_id": "a9d7b5c1-6e4f-4a3b-8c2d-1e0f9a8b3c5d",
+    "created_at": "2025-12-07 14:15:58.765000+00",
+    "title": "Apple MacBook Pro 14-inch (M3 Chip)",
+    "description": "Latest MacBook Pro with M3 chip, 16GB RAM. Perfect for demanding video editing or software development projects. Pre-loaded with creative software.",
+    "category": "Electronics",
+    "price_daily": 35,
+    "price_weekly": 180,
+    "price_monthly": 450,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Richmond Hill",
+    "location_neighborhood": [
+      "Vaughan",
+      "Markham"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "f9b2d4c7-1e3a-4b0d-9c6f-7e8a5d2b1c4e",
+    "owner_id": "2d1c4b9e-5a7f-4c8d-9b3e-0f6a8d7c1b5e",
+    "created_at": "2025-12-07 15:30:21.012000+00",
+    "title": "Lawn Mower and Gardening Tool Kit",
+    "description": "High-powered self-propelled lawn mower, string trimmer, and hedge clippers. Everything you need for yard maintenance.",
+    "category": "Tools",
+    "price_daily": 25,
+    "price_weekly": 100,
+    "price_monthly": 250,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Mississauga",
+    "location_neighborhood": [
+      "Oakville",
+      "Brampton"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "3a7f8b1c-9e2d-4d6a-b5e1-0c4f7a2b9d0e",
+    "owner_id": "c7e1b5a2-3f4d-4e9c-8b0a-6d5f7c3e1b9a",
+    "created_at": "2025-12-07 16:45:10.556000+00",
+    "title": "Sony A7S III Full Frame Mirrorless Body",
+    "description": "Cinema-focused full-frame camera, excellent in low light and perfect for professional video production. Body only.",
+    "category": "Videography",
+    "price_daily": 50,
+    "price_weekly": 280,
+    "price_monthly": 750,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "North York",
+      "Richmond Hill"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "0f6c1e8d-4a7b-4c9d-9e2b-5f3a7d1c8e0b",
+    "owner_id": "b0a9d8c7-6e5f-4d3a-2b1c-0e9f8d7c6a5b",
+    "created_at": "2025-12-07 18:01:33.890000+00",
+    "title": "Inflatable Paddle Board (SUP) Kit",
+    "description": "Complete stand-up paddleboard kit including board, pump, paddle, and life vest. Great for lake or cottage use.",
+    "category": "Outdoors",
+    "price_daily": 20,
+    "price_weekly": 90,
+    "price_monthly": 200,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Burlington",
+    "location_neighborhood": [
+      "Hamilton",
+      "Oakville"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "5e1b9d4c-7a0f-4e2a-8c3b-6d5f1e8b4a9c",
+    "owner_id": "d1c2b3a4-e5f6-7d8c-9b0a-1e2f3d4c5b6a",
+    "created_at": "2025-12-07 19:18:22.451000+00",
+    "title": "Canon 5D Mark IV DSLR Camera",
+    "description": "Classic professional DSLR, 30.4MP full-frame sensor. Reliable for still photography and 4K video. Body only.",
+    "category": "Photography",
+    "price_daily": 30,
+    "price_weekly": 150,
+    "price_monthly": 400,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Markham",
+    "location_neighborhood": [
+      "Scarborough",
+      "Richmond Hill"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "b3c7e1a9-0d4f-4e2b-9c6d-5a8f1b0e3c7d",
+    "owner_id": "f6e5d4c3-b2a1-0f9e-8d7c-6b5a4d3c2b1a",
+    "created_at": "2025-12-07 20:33:55.776000+00",
+    "title": "Electric Scooter (Long Range)",
+    "description": "Adult electric scooter with a 45km range and 30km/h top speed. Fun and efficient for city commutes or sightseeing.",
+    "category": "Vehicle",
+    "price_daily": 15,
+    "price_weekly": 70,
+    "price_monthly": 180,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Toronto",
+    "location_neighborhood": [
+      "Downtown",
+      "Queen West"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "4d1b8c7a-2e5f-4a3d-9b0e-6c7f8a9d1b3e",
+    "owner_id": "a1c2b3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+    "created_at": "2025-12-07 21:49:09.112000+00",
+    "title": "Portable Generator (Inverter Type)",
+    "description": "Quiet inverter generator, 2000W output. Safe for sensitive electronics. Perfect for camping, cottages, or backup power.",
+    "category": "Tools",
+    "price_daily": 45,
+    "price_weekly": 230,
+    "price_monthly": 600,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Oakville",
+    "location_neighborhood": [
+      "Mississauga",
+      "Burlington"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  },
+  {
+    "id": "e2c0b5d1-4f7a-4c9e-8d3b-6a1f0c5b4e9d",
+    "owner_id": "9d8c7b6a-5f4e-3d2c-1b0a-9f8e7d6c5b4a",
+    "created_at": "2025-12-07 23:05:40.456000+00",
+    "title": "Bose Portable Home Speaker",
+    "description": "High-quality, portable smart speaker with 360-degree sound. Water-resistant and 12-hour battery life. Great for indoor/outdoor use.",
+    "category": "Electronics",
+    "price_daily": 10,
+    "price_weekly": 50,
+    "price_monthly": 130,
+    "images": [
+      "https://hygglo.imgix.net/fat-llama/products/samyang-14mm-af-28-sony-fit-super-wide-angle-lens-66444177.JPG?h=579&w=772&dpr=1.4&fit=crop&auto=compress&auto=enhance&auto=format&q=85"
+    ],
+    "location_city": "Etobicoke",
+    "location_neighborhood": [
+      "North York",
+      "Mississauga"
+    ],
+    "location_geom": null,
+    "is_featured": false,
+    "is_active": true
+  }
+]
