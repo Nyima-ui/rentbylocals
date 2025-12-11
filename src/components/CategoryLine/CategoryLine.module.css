@@ -29,6 +29,10 @@
 .categoryMenu li a {
   text-decoration: none;
   white-space: nowrap;
+  transition: opacity 150ms ease-in;
+}
+.categoryMenu li a:hover{
+  opacity: 0.7;
 }
 .categoryMenu li:first-child {
   background-color: rgba(67, 97, 238, 0.4);

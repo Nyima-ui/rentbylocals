@@ -36,7 +36,7 @@ const Navbar = () => {
             <li className={`${menuOpened ? "block" : "hidden"} md:inline`}>
               <a
                 href=""
-                className="md:block md:py-2.5 md:px-2.5 hover:border-b-white border border-transparent transition-all duration-150 ease-in"
+                className="md:block md:py-2.5 md:px-2.5 hover:opacity-70 transition-all duration-150 ease-in"
               >
                 Sign in
               </a>

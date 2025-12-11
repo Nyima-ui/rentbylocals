@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 45px;
+  border-top: 1px solid rgba(255, 255, 255, 0.607);
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-inline: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 90px;
+    padding-bottom: 120px;
+  }
+}
+.footerContainer {
+  max-width: 1154px;
+  margin-inline: auto;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, auto)); 
+}
+.footerColumn {
+  font-size: 14px;
+}
+.footerColumn li {
+  margin-top: 12px;
+  transition: all 150ms ease-in;
+}
+.footerColumn li:hover{
+  opacity: 0.7;
+}
+.footerColumn:nth-child(6) li a img {
+  display: inline;
+  margin-right: 8px;
+}
+.footerColumn h3 {
+  font-size: 19px;
+  font-weight: 500;
+}

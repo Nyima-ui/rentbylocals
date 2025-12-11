@@ -9,7 +9,6 @@
   display: block;
   cursor: pointer;
   transition: all 150ms ease-in;
-  margin-bottom: 120px;
 }
 @media screen and (max-width: 640px) {
     .showMoreBtn{
