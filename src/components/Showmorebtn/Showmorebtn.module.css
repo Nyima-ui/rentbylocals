@@ -1,0 +1,21 @@
+.showMoreBtn {
+  background-color: var(--color-accent-blue);
+  border-radius: 3px;
+  padding-block: 12px;
+  margin-inline: auto; 
+  max-width: 430px;
+  width: 100%;
+  margin-top: 60px;
+  display: block;
+  cursor: pointer;
+  transition: all 150ms ease-in;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 640px) {
+    .showMoreBtn{
+      max-width: 350px;
+    }
+}
+.showMoreBtn:hover{
+    background-color: #2F3EE0;
+}

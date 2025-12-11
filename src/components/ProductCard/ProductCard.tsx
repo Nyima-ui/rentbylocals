@@ -12,10 +12,10 @@ const ProductCard = ({ item }: ProductCardProps) => {
       <a href={item.id}>
         <div className={styles.productImageWrapper}>
           <Image
-            height={100}
-            width={100}
+            fill
             src={item.images[0]}
             alt={item.title}
+            style={{objectFit : "cover"}}
           />
         </div>
         <p className={styles.productPrice}>${item.price_daily}/day</p>
