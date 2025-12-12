@@ -1,9 +1,15 @@
-import styles from './Showmorebtn.module.css'
+import styles from "./Showmorebtn.module.css";
 
 const Showmorebtn = () => {
   return (
-    <button className={styles.showMoreBtn}>Show more</button>
-  )
-}
+    <button
+      type="button"
+      aria-label="Show more products"
+      className={styles.showMoreBtn}
+    >
+      Show more
+    </button>
+  );
+};
 
-export default Showmorebtn
+export default Showmorebtn;

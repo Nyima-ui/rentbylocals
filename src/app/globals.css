@@ -7,29 +7,6 @@
 body {
   font-family: var(--font-urbanist-sans);
 }
-/* .hero{
-  background-image: url(/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 367px;
-  width: 100vw;
-  border: 1px solid white;
-  position: relative;
-  aspect-ratio: 440 / 367;
-} */
-/* .hero::before{
-  content: "";
-  background-image: url(/hero.png);
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  background-repeat: no-repeat;
-} */
-
-/* h-screen w-full z-1 relative before:absolute before:inset-0 before:bg-[url('./assets/hero.png')] before:bg-no-repeat before:-z-1 before:bg-cover text-white */
 
 @theme {
   --color-main-blue: #06060f;
@@ -47,31 +24,3 @@ body {
   --text-6xl: 47px;
 }
 
-/* .itsdiv{
-  width: 300px;
-} */
-/* default CSS  */
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */

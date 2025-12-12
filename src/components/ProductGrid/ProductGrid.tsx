@@ -4,12 +4,16 @@ import ProductCard from "../ProductCard/ProductCard";
 
 const ProductGrid = () => {
   return (
-    <section className={styles.productGrid}>
-      <div className={styles.productGridContainer}>
+    <section
+      className={styles.productGrid}
+      aria-label="product-grid-section"
+    >
+      <h2 className="sr-only">Available Products</h2>
+      <ul className={styles.productGridContainer}>
         {data.map((item) => (
           <ProductCard key={item.id} item={item} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

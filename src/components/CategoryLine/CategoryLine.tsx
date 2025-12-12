@@ -49,12 +49,18 @@ const CategoryLine = () => {
               <a href="#">Art & Collections </a>
             </li>
           </ul>
-          <button className={styles.scrollBtn} onClick={scrollHorizontal}>
+
+          <button
+            className={styles.scrollBtn}
+            onClick={scrollHorizontal}
+            aria-label="Scroll categories right"
+          >
             <Image
               height={24}
               width={24}
-              src={"/right_arrow.svg"}
+              src={"/svg/right_arrow.svg"}
               alt="Scroll right button"
+              aria-hidden="true"
             />
           </button>
         </div>

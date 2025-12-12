@@ -8,20 +8,25 @@ interface ProductCardProps {
 
 const ProductCard = ({ item }: ProductCardProps) => {
   return (
-    <article className={styles.productCard}>
-      <a href={item.id}>
+    <li className={styles.productCard}>
+      <a href={item.id} aria-label={`View details for ${item.title}`}>
         <div className={styles.productImageWrapper}>
           <Image
             fill
             src={item.images[0]}
             alt={item.title}
-            style={{objectFit : "cover"}}
+            style={{ objectFit: "cover" }}
           />
         </div>
-        <p className={styles.productPrice}>${item.price_daily}/day</p>
-        <p className={styles.productName}>{item.title}</p>
+        <p
+          className={styles.productPrice}
+          aria-label={`Price: $${item.price_daily} per day`}
+        >
+          ${item.price_daily}/day
+        </p>
+        <h3 className={styles.productName}>{item.title}</h3>
       </a>
-    </article>
+    </li>
   );
 };
 

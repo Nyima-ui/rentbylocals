@@ -6,12 +6,12 @@ import Showmorebtn from "@/components/Showmorebtn/Showmorebtn";
 
 export default function Home() {
   return (
-    <div className="bg-main-blue text-white">
+    <main className="bg-main-blue text-white">
       <Hero />
       <CategoryLine />
       <ProductGrid />
       <Showmorebtn />
       <Footer />
-    </div>
+    </main>
   );
 }

@@ -1,7 +1,6 @@
 .productCard {
   border-radius: 3px;
 }
-
 .productCard a {
   display: flex;
   flex-direction: column;
