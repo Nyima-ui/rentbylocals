@@ -3,7 +3,12 @@ import Image from "next/image";
 import styles from "./CategoryLine.module.css";
 import { useRef } from "react";
 
-const CategoryLine = () => {
+interface CategoryLineProps {
+  pseudoCategories: string[];
+  homePage: boolean;
+}
+
+const CategoryLine = ({ pseudoCategories, homePage }: CategoryLineProps) => {
   const menuRef = useRef<HTMLUListElement>(null);
   function scrollHorizontal() {
     if (menuRef.current) {
@@ -16,38 +21,23 @@ const CategoryLine = () => {
     }
   }
   return (
-    <section className="px-5 py-7.5">
+    <section className={`px-5 ${homePage ? "py-7.5" : "py-7.5 sm:py-15"}`}>
       <div className={styles.categoryContainer}>
-        <h2 className="text-lg">Rent items in Greater Toronto Area</h2>
+        <h2 className="text-lg">
+          {homePage ? "Rent items in Greater Toronto Area" : "Popular rentals"}
+        </h2>
         <div className={styles.categoryWrapper}>
-          <ul className={styles.categoryMenu} ref={menuRef}>
-            <li>
-              <a href="#">All</a>
-            </li>
-            <li>
-              <a href="#">Furniture</a>
-            </li>
-            <li>
-              <a href="#">Electronics & Appliances </a>
-            </li>
-            <li>
-              <a href="#">Health & Beauty</a>
-            </li>
-            <li>
-              <a href="#">Mens Fashion</a>
-            </li>
-            <li>
-              <a href="#">Sports & Outdoors</a>
-            </li>
-            <li>
-              <a href="#">Books & Music</a>
-            </li>
-            <li>
-              <a href="#">Rental</a>
-            </li>
-            <li>
-              <a href="#">Art & Collections </a>
-            </li>
+          <ul
+            className={`${styles.categoryMenu} ${
+              homePage ? styles.homeMenu : styles.defaultMenu
+            }`}
+            ref={menuRef}
+          >
+            {pseudoCategories.map((category, idx) => (
+              <li key={idx}>
+                <a href="#">{category}</a>
+              </li>
+            ))}
           </ul>
 
           <button

@@ -9,9 +9,8 @@
 }
 .categoryWrapper {
   position: relative;
-  border: 1px solid black;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
   width: calc(100% - 35px);
   display: flex;
 }
@@ -39,6 +38,10 @@
   padding-inline: 8px;
   padding-block: 3px;
   border-radius: var(--primary-border-radius);
+}
+.defaultMenu.defaultMenu li:first-child{
+  background-color: transparent;
+  padding-left: 2px;
 }
 .scrollBtn {
   position: absolute;
