@@ -20,10 +20,11 @@ export default function Home() {
   return (
     <main className="bg-main-blue text-white">
       <Hero />
-      <CategoryLine pseudoCategories={pseudoCategories} homePage={true} />
-      <ProductGrid />
-      <Showmorebtn />
-      <Footer />
+      <div className="max-w-6xl mx-auto">
+        <CategoryLine pseudoCategories={pseudoCategories} homePage={true} />
+        <ProductGrid />
+        <Showmorebtn />
+      </div>
     </main>
   );
 }

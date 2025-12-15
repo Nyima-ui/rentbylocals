@@ -4,6 +4,8 @@
   padding-top: 30px;
   padding-bottom: 60px;
   padding-inline: 20px;
+  background-color: var(--color-main-blue);
+  color: var(--color-white);
 }
 @media screen and (min-width: 768px) {
   .footer {

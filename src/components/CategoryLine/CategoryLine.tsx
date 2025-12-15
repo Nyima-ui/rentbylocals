@@ -21,7 +21,7 @@ const CategoryLine = ({ pseudoCategories, homePage }: CategoryLineProps) => {
     }
   }
   return (
-    <section className={`px-5 ${homePage ? "py-7.5" : "py-7.5 sm:py-15"}`}>
+    <section className={`px-5 xl:px-0 ${homePage ? "py-7.5" : "pt-7.5 pb-6.5 sm:pt-15"}`}>
       <div className={styles.categoryContainer}>
         <h2 className="text-lg">
           {homePage ? "Rent items in Greater Toronto Area" : "Popular rentals"}

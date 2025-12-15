@@ -4,13 +4,17 @@ import { useState } from "react";
 
 interface NavbarProps {
   showSearchBox?: boolean;
+  setFilterMenuOpened? : React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Navbar = ({ showSearchBox = false }: NavbarProps) => {
+const Navbar = ({
+  showSearchBox = false,
+  setFilterMenuOpened,
+}: NavbarProps) => {
   const [menuOpened, setmenuOpened] = useState(false);
   return (
     <nav
-      className="flex justify-between mx-5 pt-5 md:pt-[15px] relative max-w-6xl md:mx-10 lg:mx-15 xl:mx-auto items-center gap-2 sm:gap-0"
+      className="flex justify-between mx-5 pt-5 md:pt-[15px] relative max-w-6xl lg:mx-15 xl:mx-auto items-center gap-2 sm:gap-0"
       aria-label="Main navigation"
     >
       <div className="flex items-start gap-5 flex-col sm:flex-row sm:items-center">
@@ -47,7 +51,7 @@ const Navbar = ({ showSearchBox = false }: NavbarProps) => {
       {/* Mobile menu buttons  */}
       <div className="flex flex-col sm:flex-row shrink-0  gap-[25px] md:hidden justify-between">
         <button
-          onClick={() => setmenuOpened(!menuOpened)}
+          onClick={() => setmenuOpened((prev) => !prev)}
           className="cursor-pointer"
           aria-expanded={menuOpened}
           aria-controls="mobile-menu"
@@ -72,7 +76,10 @@ const Navbar = ({ showSearchBox = false }: NavbarProps) => {
           )}
         </button>
         {showSearchBox && (
-          <button className="text-main-blue bg-white rounded-sm flex py-2 px-1.5">
+          <button
+            className="text-main-blue bg-white rounded-sm flex py-2 px-1.5 cursor-pointer"
+            onClick={() => setFilterMenuOpened?.((prev) => !prev)}
+          >
             <Image
               height={24}
               width={24}
@@ -117,8 +124,7 @@ const Navbar = ({ showSearchBox = false }: NavbarProps) => {
           >
             <a
               href=""
-              className="bg-accent-blue px-[7px] py-1.5 md:px-3 md:py-2.5 rounded-sm md:block hover:bg-[#2F3EE0] transition-all duration-150 ease-in
-                        hover:shadow-2xl hover:shadow-blue-500 text-white"
+              className="bg-accent-blue px-[7px] py-1.5 md:px-3 md:py-2.5 rounded-sm md:block hover:bg-[#2F3EE0] transition-all duration-150 ease-in hover:shadow-2xl hover:shadow-blue-500 text-white"
             >
               Create listing
             </a>
