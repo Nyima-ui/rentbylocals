@@ -5,11 +5,13 @@ import { useState } from "react";
 interface NavbarProps {
   showSearchBox?: boolean;
   setFilterMenuOpened? : React.Dispatch<React.SetStateAction<boolean>>;
+  hideFilterButton? : boolean;
 }
 
 const Navbar = ({
   showSearchBox = false,
   setFilterMenuOpened,
+  hideFilterButton = false
 }: NavbarProps) => {
   const [menuOpened, setmenuOpened] = useState(false);
   return (
@@ -75,7 +77,7 @@ const Navbar = ({
             />
           )}
         </button>
-        {showSearchBox && (
+        {showSearchBox && !hideFilterButton && (
           <button
             className="text-main-blue bg-white rounded-sm flex py-2 px-1.5 cursor-pointer"
             onClick={() => setFilterMenuOpened?.((prev) => !prev)}

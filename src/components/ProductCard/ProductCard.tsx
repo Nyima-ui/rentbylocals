@@ -1,6 +1,7 @@
 import styles from "./ProductCard.module.css";
 import { Product } from "@/types/types";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProductCardProps {
   item: Product;
@@ -9,7 +10,10 @@ interface ProductCardProps {
 const ProductCard = ({ item }: ProductCardProps) => {
   return (
     <li className={styles.productCard}>
-      <a href={item.id} aria-label={`View details for ${item.title}`}>
+      <Link
+        href={`/rentals/${item.id}`}
+        aria-label={`View details for ${item.title}`}
+      >
         <div className={styles.productImageWrapper}>
           <Image
             fill
@@ -25,7 +29,7 @@ const ProductCard = ({ item }: ProductCardProps) => {
           ${item.price_daily}/day
         </p>
         <h3 className={styles.productName}>{item.title}</h3>
-      </a>
+      </Link>
     </li>
   );
 };

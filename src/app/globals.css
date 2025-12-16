@@ -3,6 +3,16 @@
 :root {
   --primary-border-radius: 3px;
 }
+/* hide scrollbar  */
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   font-family: var(--font-urbanist-sans);
@@ -29,8 +39,8 @@ body {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  .no-scrollbar{
-    -ms-overflow-style : none; 
+  .no-scrollbar {
+    -ms-overflow-style: none;
     scrollbar-width: none;
   }
 }
