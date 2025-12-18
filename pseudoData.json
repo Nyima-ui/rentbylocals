@@ -9,14 +9,9 @@
     "price_daily": 15,
     "price_weekly": 80,
     "price_monthly": 200,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Markham",
-    "location_neighborhood": [
-      "Richmond Hill",
-      "Scarborough"
-    ],
+    "location_neighborhood": ["Richmond Hill", "Scarborough"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -31,15 +26,9 @@
     "price_daily": 40,
     "price_weekly": 220,
     "price_monthly": 600,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "North York",
-      "Etobicoke",
-      "Scarborough"
-    ],
+    "location_neighborhood": ["North York", "Etobicoke", "Scarborough"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -54,14 +43,9 @@
     "price_daily": 20,
     "price_weekly": 100,
     "price_monthly": 250,
-    "images": [
-      "/ringSet.webp"
-    ],
+    "images": ["/img/ringSet.webp"],
     "location_city": "Mississauga",
-    "location_neighborhood": [
-      "Brampton",
-      "Oakville"
-    ],
+    "location_neighborhood": ["Brampton", "Oakville"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -76,14 +60,9 @@
     "price_daily": 35,
     "price_weekly": 180,
     "price_monthly": 480,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Brampton",
-    "location_neighborhood": [
-      "Mississauga",
-      "Caledon"
-    ],
+    "location_neighborhood": ["Mississauga", "Caledon"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -98,14 +77,9 @@
     "price_daily": 18,
     "price_weekly": 90,
     "price_monthly": 240,
-    "images": [
-      "/tyres.webp"
-    ],
+    "images": ["/img/tyres.webp"],
     "location_city": "Scarborough",
-    "location_neighborhood": [
-      "Markham",
-      "Toronto"
-    ],
+    "location_neighborhood": ["Markham", "Toronto"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -120,15 +94,9 @@
     "price_daily": 150,
     "price_weekly": 850,
     "price_monthly": 2400,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "North York",
-      "Downtown",
-      "Etobicoke"
-    ],
+    "location_neighborhood": ["North York", "Downtown", "Etobicoke"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -143,14 +111,9 @@
     "price_daily": 18,
     "price_weekly": 95,
     "price_monthly": 230,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Oakville",
-    "location_neighborhood": [
-      "Mississauga",
-      "Milton"
-    ],
+    "location_neighborhood": ["Mississauga", "Milton"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -165,14 +128,9 @@
     "price_daily": 10,
     "price_weekly": 45,
     "price_monthly": 120,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Burlington",
-    "location_neighborhood": [
-      "Oakville",
-      "Hamilton"
-    ],
+    "location_neighborhood": ["Oakville", "Hamilton"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -187,14 +145,9 @@
     "price_daily": 25,
     "price_weekly": 120,
     "price_monthly": 320,
-    "images": [
-      "/ringSet.webp"
-    ],
+    "images": ["/img/ringSet.webp"],
     "location_city": "Markham",
-    "location_neighborhood": [
-      "Richmond Hill",
-      "Scarborough"
-    ],
+    "location_neighborhood": ["Richmond Hill", "Scarborough"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -209,14 +162,9 @@
     "price_daily": 12,
     "price_weekly": 65,
     "price_monthly": 180,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "Downtown",
-      "East York"
-    ],
+    "location_neighborhood": ["Downtown", "East York"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -231,14 +179,9 @@
     "price_daily": 15,
     "price_weekly": 70,
     "price_monthly": 180,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Richmond Hill",
-    "location_neighborhood": [
-      "Markham",
-      "Vaughan"
-    ],
+    "location_neighborhood": ["Markham", "Vaughan"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -253,14 +196,9 @@
     "price_daily": 20,
     "price_weekly": 100,
     "price_monthly": 280,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "Etobicoke",
-      "North York"
-    ],
+    "location_neighborhood": ["Etobicoke", "North York"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -275,14 +213,9 @@
     "price_daily": 25,
     "price_weekly": 120,
     "price_monthly": 310,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Mississauga",
-    "location_neighborhood": [
-      "Brampton",
-      "Etobicoke"
-    ],
+    "location_neighborhood": ["Brampton", "Etobicoke"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -297,14 +230,9 @@
     "price_daily": 30,
     "price_weekly": 150,
     "price_monthly": 400,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Vaughan",
-    "location_neighborhood": [
-      "Woodbridge",
-      "Richmond Hill"
-    ],
+    "location_neighborhood": ["Woodbridge", "Richmond Hill"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -319,14 +247,9 @@
     "price_daily": 20,
     "price_weekly": 90,
     "price_monthly": 280,
-    "images": [
-      "/ringSet.webp"
-    ],
+    "images": ["/img/ringSet.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "Downtown",
-      "Leslieville"
-    ],
+    "location_neighborhood": ["Downtown", "Leslieville"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -341,14 +264,9 @@
     "price_daily": 22,
     "price_weekly": 110,
     "price_monthly": 300,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Etobicoke",
-    "location_neighborhood": [
-      "Mississauga",
-      "North York"
-    ],
+    "location_neighborhood": ["Mississauga", "North York"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -363,14 +281,9 @@
     "price_daily": 50,
     "price_weekly": 250,
     "price_monthly": 650,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Scarborough",
-    "location_neighborhood": [
-      "Markham",
-      "Pickering"
-    ],
+    "location_neighborhood": ["Markham", "Pickering"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -385,14 +298,9 @@
     "price_daily": 35,
     "price_weekly": 180,
     "price_monthly": 450,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Richmond Hill",
-    "location_neighborhood": [
-      "Vaughan",
-      "Markham"
-    ],
+    "location_neighborhood": ["Vaughan", "Markham"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -407,14 +315,9 @@
     "price_daily": 25,
     "price_weekly": 100,
     "price_monthly": 250,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Mississauga",
-    "location_neighborhood": [
-      "Oakville",
-      "Brampton"
-    ],
+    "location_neighborhood": ["Oakville", "Brampton"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -429,14 +332,9 @@
     "price_daily": 50,
     "price_weekly": 280,
     "price_monthly": 750,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "North York",
-      "Richmond Hill"
-    ],
+    "location_neighborhood": ["North York", "Richmond Hill"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -451,14 +349,9 @@
     "price_daily": 20,
     "price_weekly": 90,
     "price_monthly": 200,
-    "images": [
-      "/ringSet.webp"
-    ],
+    "images": ["/img/ringSet.webp"],
     "location_city": "Burlington",
-    "location_neighborhood": [
-      "Hamilton",
-      "Oakville"
-    ],
+    "location_neighborhood": ["Hamilton", "Oakville"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -473,14 +366,9 @@
     "price_daily": 30,
     "price_weekly": 150,
     "price_monthly": 400,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Markham",
-    "location_neighborhood": [
-      "Scarborough",
-      "Richmond Hill"
-    ],
+    "location_neighborhood": ["Scarborough", "Richmond Hill"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -495,14 +383,9 @@
     "price_daily": 15,
     "price_weekly": 70,
     "price_monthly": 180,
-    "images": [
-      "/bicycle.webp"
-    ],
+    "images": ["/img/bicycle.webp"],
     "location_city": "Toronto",
-    "location_neighborhood": [
-      "Downtown",
-      "Queen West"
-    ],
+    "location_neighborhood": ["Downtown", "Queen West"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -517,14 +400,9 @@
     "price_daily": 45,
     "price_weekly": 230,
     "price_monthly": 600,
-    "images": [
-      "/boots.webp"
-    ],
+    "images": ["/img/boots.webp"],
     "location_city": "Oakville",
-    "location_neighborhood": [
-      "Mississauga",
-      "Burlington"
-    ],
+    "location_neighborhood": ["Mississauga", "Burlington"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true
@@ -539,14 +417,9 @@
     "price_daily": 10,
     "price_weekly": 50,
     "price_monthly": 130,
-    "images": [
-      "/tyres.webp"
-    ],
+    "images": ["/img/tyres.webp"],
     "location_city": "Etobicoke",
-    "location_neighborhood": [
-      "North York",
-      "Mississauga"
-    ],
+    "location_neighborhood": ["North York", "Mississauga"],
     "location_geom": null,
     "is_featured": false,
     "is_active": true

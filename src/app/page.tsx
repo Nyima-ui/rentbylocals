@@ -1,8 +1,8 @@
 import CategoryLine from "@/components/CategoryLine/CategoryLine";
-import Footer from "@/components/Footer/Footer";
-import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid/ProductGrid";
 import Showmorebtn from "@/components/Showmorebtn/Showmorebtn";
+import Hero from "@/components/Hero";
+
 
 const pseudoCategories: string[] = [
   "All",

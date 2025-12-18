@@ -35,13 +35,14 @@ const RentalDisplay = ({ rentalId, setisMapModalOpen }: RentalDisplayProps) => {
           {pseudoImageUrls.map((url, idx) => (
             <li
               key={idx}
-              className="size-11 lg:size-15 xl:size-18 relative cursor-pointer rounded-sm overflow-hidden "
+              className="size-11 lg:size-15 xl:size-18 relative cursor-pointer rounded-sm"
             >
               <button
                 onClick={() => setMainImage(url)}
                 type="button"
                 aria-label={`View image ${idx + 1}`}
-                className="relative size-full"
+                className="relative size-full overflow-hidden"
+                aria-current={mainImage === url}
               >
                 <Image
                   fill
@@ -60,7 +61,10 @@ const RentalDisplay = ({ rentalId, setisMapModalOpen }: RentalDisplayProps) => {
         className="flex flex-col h-[650px] justify-between md:max-w-[50%]"
       >
         {/* title */}
-        <h1 className="text-3xl md:text-4xl leading-10 mt-5 md:mt-0">
+        <h1
+          className="text-3xl md:text-4xl leading-10 mt-5 md:mt-0"
+          id="rental-info"
+        >
           Xp-pen innovator display 16 drawing tablet (15.6)
         </h1>
         {/* rating  */}
@@ -100,6 +104,8 @@ const RentalDisplay = ({ rentalId, setisMapModalOpen }: RentalDisplayProps) => {
           <button
             className="px-[17px] py-[7px] border rounded-sm border-accent-blue mt-2.5 cursor-pointer transition-transform duration-150 ease-in hover:scale-101"
             onClick={() => setisMapModalOpen(true)}
+            aria-haspopup="dialog"
+            aria-controls="map-modal"
           >
             View map
           </button>
