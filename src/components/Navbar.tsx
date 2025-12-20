@@ -1,19 +1,31 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { SignUp, useClerk, useUser } from "@clerk/nextjs";
+import CustomSignUp from "./CustomSignUp";
 
 interface NavbarProps {
   showSearchBox?: boolean;
-  setFilterMenuOpened? : React.Dispatch<React.SetStateAction<boolean>>;
-  hideFilterButton? : boolean;
+  setFilterMenuOpened?: React.Dispatch<React.SetStateAction<boolean>>;
+  hideFilterButton?: boolean;
 }
 
 const Navbar = ({
   showSearchBox = false,
   setFilterMenuOpened,
-  hideFilterButton = false
+  hideFilterButton = false,
 }: NavbarProps) => {
   const [menuOpened, setmenuOpened] = useState(false);
+  const [isSignUpDialogOpened, setisSignUpDialogOpened] = useState(false);
+  useEffect(() => {
+    if (isSignUpDialogOpened) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [isSignUpDialogOpened]);
+  const { openSignUp } = useClerk();
+  const { isSignedIn } = useUser();
   return (
     <nav
       className="flex justify-between mx-5 pt-5 md:pt-[15px] relative max-w-6xl lg:mx-15 xl:mx-auto items-center gap-2 sm:gap-0"
@@ -109,10 +121,10 @@ const Navbar = ({
            }
         `}
         >
-          <li className={`${menuOpened ? "block" : "hidden"} md:inline`}>
+          <li className={`${menuOpened ? "block" : "hidden"} md:block`}>
             <a
               href=""
-              className={`md:block md:py-2.5 md:px-2.5 hover:opacity-70 transition-all duration-150 ease-in ${
+              className={`md:block md:py-2.5 md:px-2.5 hover:opacity-70 transition-all duration-150 ease-in focus:outline-white block ${
                 showSearchBox ? "text-main-blue md:text-white" : "text-white"
               }`}
             >
@@ -122,17 +134,23 @@ const Navbar = ({
           <li
             className={`${
               menuOpened ? "block mt-[15px]" : "hidden"
-            } md:inline md:mt-0`}
+            } md:inline md:mt-0 md:border md:border-transparent`}
           >
-            <a
-              href=""
-              className="bg-accent-blue px-[7px] py-1.5 md:px-3 md:py-2.5 rounded-sm md:block hover:bg-[#2F3EE0] transition-all duration-150 ease-in hover:shadow-2xl hover:shadow-blue-500 text-white"
+            <button
+              className="bg-accent-blue px-[7px] py-1.5 md:px-3 md:py-2.5 rounded-sm md:block hover:bg-[#2F3EE0] transition-all duration-150 ease-in hover:shadow-2xl hover:shadow-blue-500 text-white cursor-pointer focus:outline-1 focus:outline-blue-500"
+              onClick={() => setisSignUpDialogOpened(true)}
             >
               Create listing
-            </a>
+            </button>
           </li>
         </div>
       </ul>
+      {isSignUpDialogOpened && (
+        <CustomSignUp
+          isSignUpDialogOpened={isSignUpDialogOpened}
+          setisSignUpDialogOpened={setisSignUpDialogOpened}
+        />
+      )}
     </nav>
   );
 };

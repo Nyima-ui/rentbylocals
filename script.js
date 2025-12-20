@@ -63,3 +63,8 @@ async function updateJson() {
 }
 
 updateJson();
+
+
+function handleClickOutside(){
+  
+}
