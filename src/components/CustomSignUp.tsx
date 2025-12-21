@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useClerk, useSignIn, useSignUp } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
+import { EmailCodeFactor } from "@clerk/types";
+import { isClerkAPIResponseError } from "@clerk/nextjs/errors";
 
 interface CustomSignUpProps {
   setisSignUpDialogOpened: React.Dispatch<React.SetStateAction<boolean>>;
@@ -12,19 +15,17 @@ const CustomSignUp = ({
   isSignUpDialogOpened,
   setisSignUpDialogOpened,
 }: CustomSignUpProps) => {
-  const signUpDialogRef = useRef<HTMLDivElement | null>(null);
-
-  const [emailVerifying, setEmailVerifying] = useState<boolean>(false);
-  const [email, setEmail] = useState<string>("");
-
+  const { isLoaded, signUp, setActive } = useSignUp();
   const { signIn } = useSignIn();
-  const { signUp } = useSignUp();
-  const { setActive } = useClerk();
+  const signUpDialogRef = useRef<HTMLDivElement | null>(null);
+  const [verifying, setVerifying] = useState<boolean>(false);
+  const [emailAddress, setEmailAddress] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [code, setCode] = useState<string>("");
+  const [authMode, setAuthMode] = useState<string>("");
+  const router = useRouter();
 
-  useEffect(() => {
-    console.log(emailVerifying);
-  }, [emailVerifying]);
-
+  // Close the sign up dialog
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") {
@@ -38,61 +39,95 @@ const CustomSignUp = ({
     };
   }, [isSignUpDialogOpened, setisSignUpDialogOpened]);
 
-  const handleGoogleSignIn = () => {
-    if (!signIn) return;
-
-    signIn.authenticateWithRedirect({
-      strategy: "oauth_google",
-      redirectUrl: "/sso-callback",
-      redirectUrlComplete: "/",
-    });
-  };
-
-  const handleAppleSignIn = () => {
-    if (!signIn) return;
-
-    signIn.authenticateWithRedirect({
-      strategy: "oauth_apple",
-      redirectUrl: "/sso-callback",
-      redirectUrlComplete: "/",
-    });
-  };
-
-  const handleEmailSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
+  //Handle Email form submission
+  const handleEmailSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!signIn) return;
 
-    const formData = new FormData(e.currentTarget);
-    const email = formData.get("email") as string;
-    if (!email) return;
-    setEmail(email);
+    if (!isLoaded) return;
 
     try {
-      await signUp?.create({ emailAddress: email });
+      // start auth with sign up flow
+      await signUp?.create({ emailAddress, password });
       await signUp?.prepareEmailAddressVerification({ strategy: "email_code" });
-      setEmailVerifying(true);
-    } catch (err) {
-      console.error("Error signing up: ", err);
+
+      setAuthMode("sign-up");
+      setVerifying(true);
+    } catch (err: unknown) {
+      if (isClerkAPIResponseError(err)) {
+        const userExists = err.errors?.some(
+          (e) => e.code === "form_identifier_exists"
+        );
+        // if user exists, trigger sign in flow
+        if (userExists) {
+          try {
+            const signInAttempt = await signIn?.create({
+              identifier: emailAddress,
+              password,
+            });
+
+            if (signInAttempt?.status === "complete") {
+              await setActive({
+                session: signInAttempt.createdSessionId,
+              });
+              router.push("/");
+            } else if (signInAttempt?.status === "needs_second_factor") {
+              const emailCodeFactor =
+                signInAttempt.supportedSecondFactors?.find(
+                  (factor): factor is EmailCodeFactor =>
+                    factor.strategy === "email_code"
+                );
+
+              if (emailCodeFactor) {
+                await signIn?.prepareSecondFactor({
+                  strategy: "email_code",
+                  emailAddressId: emailCodeFactor.emailAddressId,
+                });
+              }
+            }
+            setAuthMode("sign-in");
+            setVerifying(true);
+          } catch (err) {
+            console.error(`Sign in error 😩: ${JSON.stringify(err, null, 2)}`);
+          }
+        } else {
+          console.error(`Sign up error 😩: ${JSON.stringify(err, null, 2)}`);
+        }
+      }
     }
   };
 
-  const handleVerifyCode = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleVerifyCode = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!signUp) return;
-
-    const formData = new FormData(e.currentTarget);
-    const code = formData.get("code") as string;
+    if (!isLoaded) return;
 
     try {
-      const completeSignUp = await signUp.attemptEmailAddressVerification({
-        code
-      });
-      if (completeSignUp.status === "complete") {
-        await setActive({ session: completeSignUp.createdSessionId });
-        setisSignUpDialogOpened(false);
+      if (authMode === "sign-up") {
+        const completeSignUp = await signUp.attemptEmailAddressVerification({
+          code,
+        });
+        if (completeSignUp.status === "complete") {
+          await setActive({ session: completeSignUp.createdSessionId });
+          setisSignUpDialogOpened(false);
+          router.push("/");
+        } else {
+          // TODO: what happens if the user enters wrong code?
+        }
+      } else if (authMode === "sign-in") {
+        const signInAttempt = await signIn?.attemptSecondFactor({
+          strategy: "email_code",
+          code,
+        });
+        if (signInAttempt?.status === "complete") {
+          await setActive({
+            session: signInAttempt.createdSessionId,
+          });
+          router.push("/");
+        } else {
+          console.error(JSON.stringify(signInAttempt, null, 2));
+        }
       }
     } catch (err) {
-      console.error("Verification failed: ", err);
+      console.error(JSON.stringify(err, null, 2));
     }
   };
 
@@ -107,14 +142,11 @@ const CustomSignUp = ({
         className="bg-main-blue rounded-sm 
       py-7.5 px-5 flex flex-col items-center text-base relative min-w-[360px] md:min-w-[380px] -translate-y-10"
       >
-        {!emailVerifying ? (
+        {!verifying ? (
           <>
             <h5 className="text-lg">Log in or sign up</h5>
             <div className="w-full space-y-5 mt-5">
-              <button
-                className="py-3 border flex bg-white/95 text-main-blue rounded-sm w-full items-center justify-center gap-3 cursor-pointer group"
-                onClick={handleGoogleSignIn}
-              >
+              <button className="py-3 border flex bg-white/95 text-main-blue rounded-sm w-full items-center justify-center gap-3 cursor-pointer group">
                 <Image
                   width={24}
                   height={24}
@@ -123,10 +155,7 @@ const CustomSignUp = ({
                 />
                 <p className="group-hover:underline">Sign in with Google</p>
               </button>
-              <button
-                className="py-3 border flex bg-white/95 text-main-blue rounded-sm w-full items-center justify-center gap-3 cursor-pointer group"
-                onClick={handleAppleSignIn}
-              >
+              <button className="py-3 border flex bg-white/95 text-main-blue rounded-sm w-full items-center justify-center gap-3 cursor-pointer group">
                 <Image
                   width={24}
                   height={24}
@@ -143,13 +172,26 @@ const CustomSignUp = ({
             </div>
             <form className="mt-5 w-full" onSubmit={handleEmailSignIn}>
               <input
+                id="email"
                 type="email"
                 name="email"
                 required
+                value={emailAddress}
+                onChange={(e) => setEmailAddress(e.target.value)}
                 className="w-full bg-white rounded-sm placeholder:text-gray-text py-2.5 pl-[5px] text-main-blue focus:outline-blue-600"
                 placeholder="Sign in with Email"
               />
               <div id="clerk-captcha"></div>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full bg-white rounded-sm placeholder:text-gray-text py-2.5 pl-[5px] text-main-blue focus:outline-blue-600 mt-2.5 custom-text-security"
+                placeholder="Enter password"
+              />
               <button
                 type="submit"
                 className="py-2.5 bg-accent-blue w-full rounded-sm mt-5.5 cursor-pointer hover:bg-hover-blue"
@@ -172,14 +214,17 @@ const CustomSignUp = ({
         ) : (
           <form className="mt-5 w-full" onSubmit={handleVerifyCode}>
             <p className="text-sm mt-2">
-              We sent a code to <span>{email}</span>
+              We sent a code to <span>{emailAddress}</span>
             </p>
             <input
+              id="code"
               type="text"
               name="code"
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
               required
               maxLength={6}
-              className="w-full bg-white rounded-sm placeholder:text-gray-text py-2.5 pl-[5px] text-main-blue focus:outline-blue-600"
+              className="w-full bg-white rounded-sm placeholder:text-gray-text py-2.5 pl-[5px] text-main-blue focus:outline-blue-600 mt-3"
               placeholder="Enter 6-digit code"
             />
             <button
@@ -192,7 +237,7 @@ const CustomSignUp = ({
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
-                setEmailVerifying(false);
+                setVerifying(false);
               }}
               className="py-2.5 bg-accent-blue w-full rounded-sm mt-3 cursor-pointer hover:bg-hover-blue"
             >

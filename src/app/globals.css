@@ -44,3 +44,6 @@ body {
     scrollbar-width: none;
   }
 }
+input[type="password"]{
+  font-family: caption;
+}
