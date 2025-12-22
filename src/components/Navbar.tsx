@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { SignUp, useClerk, useUser } from "@clerk/nextjs";
+import { useUser, useClerk } from "@clerk/nextjs";
 import CustomSignUp from "./CustomSignUp";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface NavbarProps {
   showSearchBox?: boolean;
@@ -15,7 +17,16 @@ const Navbar = ({
   setFilterMenuOpened,
   hideFilterButton = false,
 }: NavbarProps) => {
+  const { isSignedIn, user, isLoaded } = useUser();
+  const router = useRouter();
+  useEffect(() => {
+    if (isLoaded) {
+      console.log(isSignedIn);
+      console.log(`User : ${user?.fullName}`);
+    }
+  }, [isSignedIn, isLoaded, user]);
   const [menuOpened, setmenuOpened] = useState(false);
+  const { signOut } = useClerk();
   const [isSignUpDialogOpened, setisSignUpDialogOpened] = useState(false);
   useEffect(() => {
     if (isSignUpDialogOpened) {
@@ -24,8 +35,9 @@ const Navbar = ({
       document.body.style.overflow = "";
     }
   }, [isSignUpDialogOpened]);
-  const { openSignUp } = useClerk();
-  const { isSignedIn } = useUser();
+
+
+
   return (
     <nav
       className="flex justify-between mx-5 pt-5 md:pt-[15px] relative max-w-6xl lg:mx-15 xl:mx-auto items-center gap-2 sm:gap-0"
@@ -122,14 +134,36 @@ const Navbar = ({
         `}
         >
           <li className={`${menuOpened ? "block" : "hidden"} md:block`}>
-            <a
-              href=""
-              className={`md:block md:py-2.5 md:px-2.5 hover:opacity-70 transition-all duration-150 ease-in focus:outline-white block ${
-                showSearchBox ? "text-main-blue md:text-white" : "text-white"
-              }`}
-            >
-              Sign in
-            </a>
+            {isSignedIn ? (
+              <>
+                <Link href={"/user-profile"} className="hover:opacity-80 transition-opacity duration-150 ease-in">
+                  <Image
+                    className="rounded-[400px] overflow-hidden"
+                    width={45}
+                    height={45}
+                    src={user.imageUrl}
+                    alt={`User profile`}
+                  />
+                </Link>
+                {/* <span>{user.primaryEmailAddress?.emailAddress}</span> */}
+                {/* TODO: move the log out button on user profile later */}
+                {/* <button
+                  className="block cursor-pointer"
+                  onClick={handleSignOut}
+                >
+                  Log out
+                </button> */}
+              </>
+            ) : (
+              <button
+                onClick={() => setisSignUpDialogOpened(true)}
+                className={`md:block md:py-2.5 md:px-2.5 hover:opacity-70 transition-all duration-150 ease-in focus:outline-white block cursor-pointer ${
+                  showSearchBox ? "text-main-blue md:text-white" : "text-white"
+                }`}
+              >
+                Sign in
+              </button>
+            )}
           </li>
           <li
             className={`${
@@ -137,8 +171,12 @@ const Navbar = ({
             } md:inline md:mt-0 md:border md:border-transparent`}
           >
             <button
-              className="bg-accent-blue px-[7px] py-1.5 md:px-3 md:py-2.5 rounded-sm md:block hover:bg-[#2F3EE0] transition-all duration-150 ease-in hover:shadow-2xl hover:shadow-blue-500 text-white cursor-pointer focus:outline-1 focus:outline-blue-500"
-              onClick={() => setisSignUpDialogOpened(true)}
+              className="bg-accent-blue px-[7px] py-1.5 md:px-3 md:py-2.5 rounded-sm md:block hover:bg-[#2F3EE0] transition-all duration-150 ease-in hover:shadow-2xl text-white cursor-pointer focus:outline-1 focus:outline-white"
+              onClick={() =>
+                isSignedIn
+                  ? router.push("/create-listing")
+                  : setisSignUpDialogOpened(true)
+              }
             >
               Create listing
             </button>

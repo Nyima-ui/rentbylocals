@@ -7,7 +7,13 @@ interface ProvidersProps {
 }
 
 const Providers = ({ children }: ProvidersProps) => {
-  return <ClerkProvider>{children}</ClerkProvider>;
+  return <ClerkProvider
+     appearance={{
+      layout:{
+        logoImageUrl : "/svg/logo.svg"
+      }
+     }}
+  >{children}</ClerkProvider>;
 };
 
 export default Providers;
